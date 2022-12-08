@@ -33,18 +33,6 @@ This document is a user guide to upgrade FIRMACHAIN from v0.3.3 to v0.3.5.
 
 </br>
 
-The `firmachaind` process will automatically be stopped at block height `4,806,000`. But the process will still remain in alive state. So you have to manually kill `firmachaind` process.
-
-```bash
-# using binary
-> pkill firmachaind
-
-# using system service
-> sudo systemctl stop firmachaind
-```
-
-</br>
-
 ## Preparing for the Upgrade Binary
 Prepare the FirmaChain v0.3.5 binary for the upgrade.
 ```bash
@@ -70,8 +58,8 @@ Please check the version once you’ve prepared your binary. If the version info
 
 > firmachaind version --long
 name: FirmaChain
-server_name: <appd>
-version: 0.3.5-beta5
+server_name: firmachaind
+version: 0.3.5
 ...
 cosmos_sdk_version: v0.45.9
 ```
@@ -98,7 +86,7 @@ If you are faced with an issue while upgrading the network, you might have to re
 
 </br>
 
-## Using just firmachain binary
+## Start Chain (Using FirmaChain binary)
 Once you've completed all of the above without any problems, let's restart the chain.
 ```bash
 # Binary move
@@ -113,7 +101,7 @@ sudo mv ~/go/bin/firmachaind /usr/local/bin/firmachaind
 
 </br>
 
-## Using Cosmovisor (Optional)
+## Start Chain (Using Cosmovisor)
 Move the v0.3.5 binary to the appropriate folder space.
 
 ```bash
