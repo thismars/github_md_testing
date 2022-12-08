@@ -45,14 +45,6 @@ The `firmachaind` process will automatically be stopped at block height `4,806,0
 
 </br>
 
-## Backup (optional)
-If you are faced with an issue while upgrading the network, you might have to restart from the original version. Therefore, we highly recommend you backup the original version of FirmaChain before upgrading the network. (Per Pruning Default, approximately 200~250 GB expected)
-```bash
-> tar -cvf firmachain_bak_20221207.tar .firmachain
-```
-
-</br>
-
 ## Preparing for the Upgrade Binary
 Prepare the FirmaChain v0.3.5 binary for the upgrade.
 ```bash
@@ -84,6 +76,8 @@ version: 0.3.5-beta5
 cosmos_sdk_version: v0.45.9
 ```
 
+</br>
+
 ## Stand by at upgrade height
 Once the chain network reaches block height XXXX on the v0.3.3, the network will display an “Error Message’ and will come to a halt. However, the process will still remain in alive state. If you see the following error message, please manually kill the nodes. (If you have registered using system service, you must STOP the service.)
 ```bash
@@ -93,6 +87,16 @@ pkill firmachaind
 # using system service
 sudo systemctl stop firmachaind
 ```
+
+</br>
+
+## Backup (optional)
+If you are faced with an issue while upgrading the network, you might have to restart from the original version. Therefore, we highly recommend you backup the original version of FirmaChain before upgrading the network. (Per Pruning Default, approximately 200~250 GB expected)
+```bash
+> tar -cvf firmachain_bak_20221207.tar .firmachain
+```
+
+</br>
 
 ## Using just firmachain binary
 Once you've completed all of the above without any problems, let's restart the chain.
