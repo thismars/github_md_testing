@@ -36,13 +36,9 @@ This document is a user guide to upgrade FIRMACHAIN from v0.3.3 to v0.3.5.
 ## Preparing for the Upgrade Binary
 Prepare the FirmaChain v0.3.5 binary for the upgrade.
 
-
+This upgrade will not support the binary download method used in the previous upgrades. This is because with the addition of the CosmWasm module, users must install the "libwasmvm.so" library that suits the user’s respective operating system and version.
 
 ```bash
-# This upgrade will not support the binary download method used in the previous upgrades.
-# This is because with the addition of the CosmWasm module, users must install the "libwasmvm.
-# so" library that suits the user’s respective operating system and version.
-
 # The installation of go, gcc and make are required in order to continue with the build.
 # (If you have them already installed, you can skip this process)
 > sudo snap install go --classic
