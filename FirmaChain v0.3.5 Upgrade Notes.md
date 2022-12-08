@@ -53,38 +53,53 @@ If you are faced with an issue while upgrading the network, you might have to re
 
 </br>
 
-## Using just firmachain binary
-Now you're ready to install the new binary.
+## Preparing for the Upgrade Binary
+Prepare the FirmaChain v0.3.5 binary for the upgrade.
 ```bash
 # The installation of go, gcc and make are required in order to continue with the build. (If you have them already installed, you can skip this process)
 > sudo snap install go --classic
 > sudo apt install gcc
 > sudo apt-get install make
 
-# Build binary
+# Binary build
 > git clone https://github.com/firmachain/firmachain.git
 > cd firmachain
 > git checkout v0.3.5
 > make install
-> sudo mv ~/go/bin/firmachaind /usr/local/bin/firmachaind
+```
 
-# Check version
+</br>
+
+## Check binary version
+Please check the version once you’ve prepared your binary. If the version information is different from the one mentioned in the “Code Block” below, please create a new binary or contact us to solve the issue.
+```bash
 > firmachaind version
 0.3.5
 
 > firmachaind version --long
 name: FirmaChain
 server_name: <appd>
-version: 0.3.5-beta2
-commit: e76e6a76044c1aec9eb763655acb93ebcd50e8ba
-build_tags: ',ledger'
-go: go version go1.18.5 linux/amd64
+version: 0.3.5-beta5
 ...
 cosmos_sdk_version: v0.45.9
 ```
 
+## Stand by at upgrade height
+Once the chain network reaches block height XXXX on the v0.3.3, the network will display an “Error Message’ and will come to a halt. However, the process will still remain in alive state. If you see the following error message, please manually kill the nodes. (If you have registered using system service, you must STOP the service.)
+```bash
+# using binary
+pkill firmachaind
+
+# using system service
+sudo systemctl stop firmachaind
+```
+
+## Using just firmachain binary
 Once you've completed all of the above without any problems, let's restart the chain.
 ```bash
+# Binary move
+sudo mv ~/go/bin/firmachaind /usr/local/bin/firmachaind
+
 # using binary
 > firmachaind start
 
