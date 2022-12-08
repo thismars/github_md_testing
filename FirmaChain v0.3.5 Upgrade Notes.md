@@ -79,7 +79,7 @@ cosmos_sdk_version: v0.45.9
 </br>
 
 ## Stand by at upgrade height
-Once the chain network reaches block height XXXX on the v0.3.3, the network will display an “Error Message’ and will come to a halt. However, the process will still remain in alive state. If you see the following error message, please manually kill the nodes. (If you have registered using system service, you must STOP the service.)
+Once the chain network reaches block height `4,806,000` on the v0.3.3, the network will display an “Error Message’ and will come to a halt. However, the process will still remain in alive state. If you see the following error message, please manually kill the nodes. (If you have registered using system service, you must STOP the service.)
 ```bash
 # using binary
 pkill firmachaind
