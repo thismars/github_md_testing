@@ -29,7 +29,7 @@ This document is a user guide to upgrade FIRMACHAIN from v0.3.3 to v0.3.5.
 
 ## Installation Process
 - If you want to use cosmovisor when upgrading the chain, please click on the link below.
-- https://docs.firmachain.org/master/validator-guide/upgrade/cosmovisor-guide
+- https://firmachain-1.gitbook.io/firmachain/validator-guide/upgrade/cosmovisor-guide
 
 </br>
 
@@ -55,7 +55,7 @@ This upgrade will not support the binary download method used in the previous up
 </br>
 
 ## Check binary version
-Please check the version once you’ve prepared your binary. If the version information is different from the one mentioned in the “Code Block” below, please create a new binary or contact us to solve the issue.
+Please check the version once you’ve prepared your binary. If the version information is different from the one mentioned in the “Code Block” below, please create a new binary or [contact us](mailto:contact@firmachain.org) to solve the issue.
 ```bash
 > firmachaind version
 0.3.5
@@ -76,7 +76,7 @@ Once the chain network reaches block height `4,806,000` on the v0.3.3, the netwo
 # using binary
 pkill firmachaind
 
-# using system service
+# or using system service
 sudo systemctl stop firmachaind
 ```
 
@@ -99,7 +99,7 @@ sudo mv ~/go/bin/firmachaind /usr/local/bin/firmachaind
 # using binary
 > firmachaind start
 
-# using system service
+# or using system service
 > sudo systemctl start firmachaind
 ```
 
