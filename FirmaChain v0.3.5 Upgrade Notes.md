@@ -1,5 +1,5 @@
-# FirmaChain v0.3.5 Upgrade Notes
-This document is a user guide to upgrade FirmaChain from v0.3.3 to v0.3.5.
+# FIRMACHAIN v0.3.5 Upgrade Notes
+This document is a user guide to upgrade FIRMACHAIN from v0.3.3 to v0.3.5.
 
 </br>
 
