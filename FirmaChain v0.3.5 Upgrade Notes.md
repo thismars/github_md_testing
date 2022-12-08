@@ -19,7 +19,7 @@ This document is a user guide to upgrade FIRMACHAIN from v0.3.3 to v0.3.5.
 
 </br>
 
-## Main Chainges
+## Main Changes
 - Support Cosmos SDK 0.45.9
 - Support IBC v3.3.0
 - Support Wasmd v0.29.2 (support cosmwasm-std 1.0-1.1)
