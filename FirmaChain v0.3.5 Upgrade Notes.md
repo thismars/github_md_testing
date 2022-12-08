@@ -23,20 +23,20 @@ This document is a user guide to upgrade FIRMACHAIN from v0.3.3 to v0.3.5.
 - Support Cosmos SDK 0.45.9
 - Support IBC v3.3.0
 - Support Wasmd v0.29.2 (support cosmwasm-std 1.0-1.1)
-- Change 'Minimum Commission Rate'
+- Change 'Minimum Commission Rate' (0% -> 5%)
 
 </br>
 
 ## Installation Process
 - If you want to use cosmovisor when upgrading the chain, please click on the link below.
-- https://firmachain-1.gitbook.io/firmachain/validator-guide/upgrade/cosmovisor-guide
+- https://docs.firmachain.org/master/validator-guide/upgrade/cosmovisor-guide
 
 </br>
 
 ## Preparing for the Upgrade Binary
 Prepare the FirmaChain v0.3.5 binary for the upgrade.
 
-*This upgrade will not support the binary download method used in the previous upgrades. This is because with the addition of the CosmWasm module, users must install the "libwasmvm.so" library that suits the user’s respective operating system and version.*
+This upgrade will not support the binary download method used in the previous upgrades. This is because with the addition of the CosmWasm module, users must install the "libwasmvm.so" library that suits the user’s respective operating system and version.
 
 ```bash
 # The installation of go, gcc and make are required in order to continue with the build.
