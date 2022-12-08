@@ -43,7 +43,8 @@ Prepare the FirmaChain v0.3.5 binary for the upgrade.
 # This is because with the addition of the CosmWasm module, users must install the "libwasmvm.
 # so" library that suits the user’s respective operating system and version.
 
-# The installation of go, gcc and make are required in order to continue with the build. (If you have them already installed, you can skip this process)
+# The installation of go, gcc and make are required in order to continue with the build.
+# (If you have them already installed, you can skip this process)
 > sudo snap install go --classic
 > sudo apt install gcc
 > sudo apt-get install make
